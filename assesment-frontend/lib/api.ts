@@ -1,6 +1,4 @@
 export const API = process.env.NEXT_PUBLIC_API_BASE;
-console.log("API URL:", process.env.NEXT_PUBLIC_API_BASE);
-console.log('API URL:', API);
 
 if (!API) {
   throw new Error('NEXT_PUBLIC_API_BASE is not defined');
