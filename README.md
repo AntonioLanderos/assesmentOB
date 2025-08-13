@@ -122,3 +122,12 @@ FRONTEND_ORIGIN=http://localhost:3000
 
 # Frontend (.env.local)
 NEXT_PUBLIC_API_BASE=http://localhost:4000
+```
+
+---
+
+### Notas de desarrollador
+- Se configuró un proxy utilizando duckdns para poder lograr la certificación https
+- Algunas configuraciones del ec2 y s3 están inseguras, idealmente se toma más tiempo en la configuración pero en este caso se aceler'el proceso.
+- Al hacer el llenado con datos dummy de la BD del server se insertaron directamente algunos PDF, por lo que no existen en el s3
+- *** El server de aws será eliminado en el momento que este proyect cumpla con su función, esto para evitar cargos monetarios ***
