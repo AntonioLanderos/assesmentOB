@@ -17,7 +17,7 @@ export default function AdminPage() {
           <div style={{display:'flex', gap:8, marginTop:12}}>
             <input placeholder="doctorUserId" value={doctorUserId} onChange={e=>setD(e.target.value)} />
             <input placeholder="patientUserId" value={patientUserId} onChange={e=>setP(e.target.value)} />
-            <button onClick={assign}>Asignar</button>
+            <button className="bg-blue-500 text-white rounded px-4 py-2" onClick={assign}>Asignar</button>
           </div>
         </main>
       </RoleGate>
