@@ -1,4 +1,9 @@
-export const API = process.env.NEXT_PUBLIC_API_URL;
+export const API = process.env.NEXT_PUBLIC_API_BASE;
+console.log('API URL:', API);
+
+if (!API) {
+  throw new Error('NEXT_PUBLIC_API_URL is not defined');
+}
 
 export async function api<T = any>(
   path: string,
